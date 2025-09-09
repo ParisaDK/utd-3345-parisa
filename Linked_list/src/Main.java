@@ -1,3 +1,5 @@
+package Linked_list.src;
+
 public class Main {
     public static void main(String[] args) {
         ListADT<Integer> myList = new LinkedListADTImpl<>();
@@ -7,9 +9,11 @@ public class Main {
         myList.insert(5, 0);    // [5, 10, 20]
 
         System.out.println("Element at index 1: " + myList.access(1)); // 10
-        myList.replace(99, 1);   // [5, 99, 20]
-        myList.remove(2);        // [5, 99]
+
+        myList.replace(99, 1);  // [5, 99, 20]
+        myList.remove(2);       // [5, 99]
 
         System.out.println("Size = " + myList.size()); // 2
+        System.out.println("Empty? " + myList.isEmpty()); // false
     }
 }
